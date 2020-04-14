@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Stylesheet1.css"></link>
+
+<script src="http://www.fastlearning.in/controller/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function() {
+    $('label').click(function() {
+        $('label').removeClass('worngans');
+        $(this).addClass('worngans');
+    });
+});
+</script>
+<title>Environmental Quiz</title>
+</head>
+
+<style>
+ input[type=radio] {
+    display:none; 
+}
+input[type=radio] + label {
+    display:inline-block;
+ width:95%;
+ padding:10px;
+ border:1px solid #ddd;
+ margin-bottom:10px;
+ cursor:pointer;
+}
+input[type=radio] + label:hover{ border:1px solid #000000;}
+input[type=radio]:checked + label { 
+   background-image: none;
+   background-color:#0C0;
+ color:#fff;
+ border:1px solid #0C0 !important;
+ -webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+input[type=radio] {
+    display:none; 
+}
+input[type=radio] + label {
+    display:inline-block;
+ width:95%;
+ padding:10px;
+ border:1px solid #ddd;
+ margin-bottom:10px;
+ cursor:pointer;
+}
+input[type=radio] + label:hover{ border:1px solid #000000;}
+input[type=radio]:checked + label { 
+   background-image: none;
+   background-color:#0C0;
+ color:#fff;
+ border:1px solid #0C0 !important;
+ -webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.worngans{ background-color:#F36;color:#fff; border:1px solid #F36 !important;-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;}
+
+
+</style>
+
+
+<body>
+<div class="div1">
+
+<h1>SEAD<hr></hr></h1>
+	<ul>
+		<li><a href=??????>Home</a></li>
+		<li><a href="AboutUs.html">About Us</a></li>
+		<li><a href=??????>How to Help</a></li>
+		<li><a href=??????>Top Donators</a></li>
+		<li><a class="active" href=??????>Quiz</a></li>
+	</ul>
+
+<article>
+<h1>SEAD's official environmental quiz</h1>
+<p>Test your knowledge of environmental problems and see how much you really know about deforestation</p>
+</article>
+
+<br>
+  <h3>1. How many trees does Mr. Beast want to plant?</h3>
+<br/>
+    <input type="radio" id="20 million" name="question1">
+       <label for="20 million">1. 20 million</label><br/>
+    <input type="radio" name="question1">
+       <label>2. 10 million</label><br/>
+    <input type="radio" name="question1">
+       <label id="wrongans">3. 1 million</label> <br/>
+    <input type="radio" name="question1">
+     <label id="wrongans">4. 50 million</label>
+
+<br>
+<h3>2. What is the leading cause of deforestation?</h3>
+<br/>
+    <input type="radio" name="question2">
+       <label>1. Forest Fires</label><br/>
+    <input type="radio" name="question2">
+       <label>2. The Paper Industry</label><br/>
+    <input type="radio" id="Agriculture" name="question2">
+       <label for="Agriculture">3. Agriculture</label> <br/>
+    <input type="radio" name="question2">
+     <label>4. Andrew</label>
+
+<br>
+<h3>3. How many trees does it take to plant a tree?</h3>
+</br>
+    <input type="radio" name="question3">
+       <label>1. Eleven</label><br/>
+    <input type="radio" id="One" name="question3">
+       <label for="One">2. One</label><br/>
+    <input type="radio" name="question3">
+       <label>3. Two</label> <br/>
+    <input type="radio" name="question3">
+     <label>4. Eight</label>
+
+<br>
+<h3>4. Who is the current Vice-President of the UL Environmental Society?</h3>
+</br>
+    <input type="radio" name="question4">
+       <label>1. Greta Thunberg</label><br/>
+    <input type="radio" name="question4">
+       <label>2. Conor Ryan</label><br/>
+    <input type="radio" name="question4">
+       <label>3. David Woods</label> <br/>
+    <input type="radio" id="Eshal Skaria" name="question4">
+     <label for="Eshal Skaria">4. Eshal Skaria</label>
+
+<br>
+<h3>5. How many acres of forest are cut down every second?</h3>
+</br>
+    <input type="radio" name="question5">
+       <label>1. 2.5 acres</label><br/>
+    <input type="radio" name="question5">
+       <label>2. 2 acres</label><br/>
+    <input type="radio" id="1.5 acres" name="question5">
+       <label for="1.5 acres">3. 1.5 acres</label> <br/>
+    <input type="radio" name="question5">
+     <label>4. 1 acre</label>
+	 
+<br>
+<h3>6. What percentage of the worlds oxygen is produced in the Amazon?</h3>
+</br>
+    <input type="radio" name="question6">
+       <label>1. 10 Percent</label><br/>
+    <input type="radio" name="question6">
+       <label>2. 15 Percent</label><br/>
+    <input type="radio" name="question6">
+       <label>3. 18 Percent</label> <br/>
+    <input type="radio" id="20 Percent" name="question6">
+     <label for="20 Percent">4. 20 Percent</label>	 
+
+<br>
+<h3>7. How many species may go extinctby 2025?</h3>
+</br>
+    <input type="radio" id="28,000" name="question7">
+       <label for="28,000">1. 28,000</label><br/>
+    <input type="radio" name="question7">
+       <label>2. 12,000</label><br/>
+    <input type="radio" name="question7">
+       <label>3. 30,000</label> <br/>
+    <input type="radio" name="question7">
+     <label>4. 21,000</label>
+	 
+<br>
+<h3>8. How many pounds of paper does the average American use per year?</h3>
+</br>
+    <input type="radio" name="question8">
+       <label>1. 300 Pounds</label><br/>
+    <input type="radio" name="question8">
+       <label>2. 500 Pounds</label><br/>
+    <input type="radio" id="700 Pounds" name="question8">
+       <label for="700 Pounds">3. 700 Pounds</label> <br/>
+    <input type="radio" name="question8">
+     <label>4. 900 Pounds</label>	 
+
+<br>
+<h3>9. What percentage of carbon emmisions do cars and trucks use?</h3>
+</br>
+    <input type="radio" name="question9">
+       <label>1. 15 Percent</label><br/>
+    <input type="radio" id="20 Percents" name="question9">
+       <label for="20 Percents">2. 20 Percent</label><br/>
+    <input type="radio" name="question9">
+       <label>3. 25 Percent</label> <br/>
+    <input type="radio" name="question9">
+     <label>4. 30 Percent</label>
+
+<br>
+<h3>10. According to the WFP, how many people could be affected by climate change disasters?</h3>
+</br>
+    <input type="radio" id="375 million" name="question10">
+       <label for="375 million">1. 375 million</label><br/>
+    <input type="radio" name="question10">
+       <label>2. 200 million</label><br/>
+    <input type="radio" name="question10">
+       <label>3. 175 million</label> <br/>
+    <input type="radio" name="question10">
+     <label>4. 160 million</label>
+	 
+<br>
+<h3>11. How many people die due to climate change a year?</h3>
+</br>
+    <input type="radio" name="question11">
+       <label>1. 145,000</label><br/>
+    <input type="radio" name="question11">
+       <label>2. 234,000</label><br/>
+    <input type="radio" id="600,000" name="question11">
+       <label for="600,000">3. 600,000</label> <br/>
+    <input type="radio" name="question11">
+     <label>4. 750,000</label>	 
+
+<br>
+<h3>12. How many of those deaths occur in Europe?</h3>
+</br>
+    <input type="radio" name="question12">
+       <label>1. 12,000</label><br/>
+    <input type="radio" name="question12">
+       <label>2. 30,000</label><br/>
+    <input type="radio" name="question12">
+       <label>3. 50,000</label> <br/>
+    <input type="radio" id="70,000" name="question12">
+     <label for="70,000">4. 70,000</label>
+	 
+ </div>
+ 
+
+ <body>
+ 
+ <footer>
+
+</footer>
+
+ 
+ </html>
+ 

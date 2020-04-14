@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Space Clicker</title>
+		<link rel="icon" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="stylesheet(general).css"></link>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+	<div class="div1"><h1>SEAD<hr></hr></h1>
+	<ul>
+		<li><a href="Homepage.html">Home</a></li>
+		<li><a href="AboutUs.html">About Us</a></li>
+		<li><a href="HowToHelp.html">How to Help</a></li>
+		<li><a href="TopDonators.html">Top Donators</a></li>
+		<li><a href="Quiz.html">Quiz</a></li>
+		<li><a class="active "href="Counter.html">Counter</a></li>
+	</ul>
+	
+	
+		<style>
+			button {
+			  background-color: green; 
+			  border: 2px solid black;
+			  border-radius: 12px;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 24px;
+			  cursor:pointer;
+			}
+
+			button:active {
+			  background-color: #3e8e41;
+			  box-shadow: 0 5px #666;
+			  transform: translateY(4px);
+			}
+
+			p { 
+					font family: verdana;
+					font-size: 22px;
+			}
+				
+		</style>
+
+		<script type="text/javascript">
+			var clicks = 0;
+			function onClick() {
+				clicks += 1;
+				document.getElementById("clicks").innerHTML = clicks;
+			};
+		</script>
+		
+			<center>
+				<p>Trees Planted: <a id="clicks">0</a></p>
+					<p>
+						<img src="favicon.png" width="400" height="500" />
+					</p>	
+				<button type="button" onClick="onClick()">Plant a tree</button>
+			</center>
+	</div>		
+	</body>
+	
+<footer>
+
+<div class="footer">
+	 <a href="https://www.facebook.com/sead1472/?view_public_for=111702040290958" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/SEAD23648470" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/sead4life" class="fa fa-instagram"></a>
+</div>
+
+</footer>
+
+	
+</html>

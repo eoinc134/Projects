@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="stylesheet(general).css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Top Donators</title>
+
+<style>
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.middle {
+ padding-left: 40%;
+ }
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: green;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+p {
+text-align: center;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="div1"><h1>SEAD<hr></hr></h1>
+<ul>
+		<li><a href="Homepage.html">Home</a></li>
+		<li><a href="AboutUs.html">About Us</a></li>
+		<li><a href="HowToHelp.html">How to Help</a></li>
+		<li><a class="active" href="TopDonators.html">Top Donators</a></li>
+		<li><a href="Quiz.html">Quiz</a></li>
+		<li><a href="Counter.html">Counter</a></li>
+	</ul>
+	
+	<br>
+
+<script>
+var i = 0
+
+function Count() {
+    document.getElementById("output").innerHTML = i++ + 1;
+}
+</script>
+</script>
+
+
+<div align="center">
+        <button class="button" onclick="Count()">Plant a Tree!</button>
+        </div>
+       
+       <p>Number of Trees planted:
+        <span id="output">0</span></p>
+        
+		
+
+
+<h3 align="center">The Top Donators are as follows. Over $15,000,000 has been raised for this worthy cause, and these three people have planted nearly 3,000,000 trees together</h3>
+<i><p>Hover over photos</p></i>
+
+<div class="middle">
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="./pictures/donators/tobi.jpg" alt="Tobi" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Tobi Lutke</h2>
+	  <p>CEO Of Shopify<p>
+      <h4>$1,000,001</h4>
+	  <img src="./pictures/donators/lutke1.jpg" style="width:98px;height:55px">
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="./pictures/donators/elon.jpg" alt="Marc" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Elon Musk</h2>
+	  <p>CEO Of Shopify<p>
+      <h4>$1,000,000</h4>
+	  <img src="./pictures/donators/elon1.jpg" style="width:98px;height:55px">
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="./pictures/donators/marc.png" alt="Marc" style="width:300px;height:200px">
+    </div>
+    <div class="flip-box-back">
+      <h2>Marc Benioff</h2>
+	  <p>CEO Of Salesforce.com<p>
+      <h4>$900,000</h4>
+	  <img src="./pictures/donators/marc1.jpg" style="width:98px;height:55px">
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</body>
+
+<footer>
+
+<div class="footer">
+	 <a href="https://www.facebook.com/sead1472/?view_public_for=111702040290958" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/SEAD23648470" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/sead4life" class="fa fa-instagram"></a>
+</div>
+
+</footer>
+
+</html>

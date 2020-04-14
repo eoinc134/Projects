@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="stylesheet(general).css"></link>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family:}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="div1"><h1>SEAD<hr></hr></h1>
+
+<ul>
+		<li><a class="active" href="Homepage.html">Home</a></li>
+		<li><a href="AboutUs.html">About Us</a></li>
+		<li><a href="HowToHelp.html">How to Help</a></li>
+		<li><a href="TopDonators.html">Top Donators</a></li>
+		<li><a href="Quiz.html">Quiz</a></li>
+		<li><a href="Counter.html">Counter</a></li>
+	</ul>
+
+<p>Here at SEAD we wish to educate people all over the world about the dangers of climate change and the effects
+that climate change will bring upon the world. </p>
+<p>We are a non profit organisation dedicated to solving this problem to save all future generations from dealing 
+with the consequences of the current greed of so many people and businesses that wish to exploit our environment to 
+make a couple extra pennies.</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="./pictures/slideshow/slideshow1.jpg" height="500" width= "960">
+  <div class="text">The icecaps melting</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="./pictures/slideshow/slideshow2.jpg" height="500" width= "960">
+  <div class="text">Polar bears stuck on a drifing melted icecap</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="./pictures/slideshow/slideshow3.jpg" height="500" width= "960">
+  <div class="text">Penguins on the melted icecaps</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 7</div>
+  <img src="./pictures/slideshow/slideshow4.jpg" height="500" width= "960">
+  <div class="text">Fossil fuels emmited by large companies</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 7</div>
+  <img src="./pictures/slideshow/slideshow5.jpg" height="500" width= "960">
+  <div class="text">Even more fuels being emitted</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 7</div>
+  <img src="./pictures/slideshow/slideshow6.jpg" height="500" width= "960">
+  <div class="text">Fires in the Amazon rainforest a major source of wildlife</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 7</div>
+  <img src="./pictures/slideshow/slideshow7.jpg" height="500" width= "960">
+  <div class="text">A bleak future</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+<p> We believe this is a serious issue that must be looked at further. It is clear that there isnt enough work being done 
+for the seriousness of the issue. This issue will have drastic effects if it is not dealt with immediately.</p>
+<h4>Some key people in this fight to save our planet:</h4>
+<ul>
+<li>Youtube sensation Mr Beast has been gaining steady popularity recently due to his wish to plant 20million trees
+a goal that is soon approaching and can be tracked <a href="https://teamtrees.org/">here</a></li>
+<li>Elon Musk has been well known for his environmental concerns and has been steadily trying to push electric cars
+into the spotlight with his tesla series of cars. He has even released all of Teslas patents so that progress can be
+made even quicker</li>
+<li>Greta Thunberg has been the spark that initiated this movement or atleast brought the issue to light to so many people
+this remarkable girl has been fighting climate change since the age of 15 when she began spending her school days outside 
+of Sweedish parliment to call for stronger action to be taken. This remarkable girl has been nominated for countless awards
+amd has inspired many school aged peers in what has been described as the "Greta effect".</li>
+<li>UL environmental Society has been helping to spread awareness of the issue all throughout Ireland but particularly in 
+Limerick and the college of UL itself. They have organised a number of protests and meetings about the issue in the hopes of spreading
+the message far and wide. This society led by their president Christopher Asmus and vice-president Eshal Skaria</li>
+<li>Lusia Neubauer often referred to as the "German Greta Thunberg" has shown her determination through the organisation 
+of the countries massive Fridays For Future climate marches. These have been a massive success and have raised awareness of this issue globally</li>
+</ul>
+
+<h4>Surely it can't be that bad?</h4>
+<p>Unforetunately it really is and the facts are their to prove it. With that being said here are some terrifying facts about the issues that 
+we face:</p>
+<ul>
+<li>Unfortunately agriculture is the leading cause of deforestation. This is particularly worrying in the Amazon rainforest where most scientists
+believe we are losing 80,000 acres of tropical rainforest a day. This is due to exploitation of the soil in the rainforest and the burning of 
+forest to temporarily boost the nutrients in the soil however it becomes impossible to farm on afterwards only years later due to leeching of all the 
+nutrients. It is estimated that there is 1.5 acres of forests cut down every second worldwide most of which coming from the Amszon. This is 
+partuclaraly worrying when you realise that the Amazon rainforest produces 20% of the worlds ozygen.</li>
+<li>The average American uses roughly 700pounds of paper a year. This is an increase of over 126% from 20years ago.</li>
+<li>Many people don't believe climate change effects anyone around us however every year 600,000 people die due to the effects
+ of climate change. And of that 600,000 deaths about 70,000 of those come from people in Europe. This is a issue that effects everyone from 
+ devolped to devolping countries.</li>
+ <li>The WFP (World Food Program) has estimaated that 375 million people could be affected by climate change disasters.</li>
+ <li>By 2025 28,000 species are going to go extinct at our current rate. Over 200 species are going extinct daily. And by 2050 it is estimated 1 in 10 
+ animals and plants may be extinct by 2050.</li>
+ </ul>
+ 
+
+
+</body>
+
+ <footer>
+
+<div class="footer">
+	 <a href="https://www.facebook.com/sead1472/?view_public_for=111702040290958" class="fa fa-facebook"></a>
+	<a href="https://twitter.com/SEAD23648470" class="fa fa-twitter"></a>
+	<a href="https://www.instagram.com/sead4life" class="fa fa-instagram"></a>
+</div>
+
+</footer>
+
+</html> 
