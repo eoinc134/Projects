@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Hangman
+comment1.params=filename
+comment1.target=java.util.ArrayList\ loadWordFromFile(java.lang.String)
+comment2.params=wordFile
+comment2.target=void\ startGame(java.lang.String)
+comment3.params=letter
+comment3.target=int\ guessLetter(char)
+numComments=4
