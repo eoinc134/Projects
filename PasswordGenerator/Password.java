@@ -1,10 +1,6 @@
 
 public class Password
 {
-   //Name: David Barrett
-   //ID Number: 19264933
-   //Phone Number: 087 680 0893
-   
    private int minLen; //min length
    private int maxLen; // max length
    private String specialChars; //symbols
